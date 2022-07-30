@@ -80,8 +80,8 @@ export default class ListCategory extends Component {
                         <tr>
                           <th style={{ width: "10px" }}>#</th>
                           <th>Nama Kategori</th>
-                          <th>Nilai Minimal</th>
-                          {/* <th>Durasi</th>
+                          {/* <th>Nilai Minimal</th>
+                          <th>Durasi</th>
                           <th>Batas Pertanyaan</th> */}
                           <th>Aksi</th>
                         </tr>
@@ -93,8 +93,8 @@ export default class ListCategory extends Component {
                               <tr data-index={index}>
                                 <td>{index+1}</td>
                                 <td>{categories.name}</td>
-                                <td>{categories.min_score}</td>
-                                {/* <td>{categories.duration}</td>
+                                {/* <td>{categories.min_score}</td>
+                                <td>{categories.duration}</td>
                                 <td>{categories.limit_question}</td> */}
                                 <td>
                                   <button
@@ -117,7 +117,7 @@ export default class ListCategory extends Component {
                           </>
                         ) : (
                           <tr>
-                            <td colspan="4" className="text-center">
+                            <td colspan="6" className="text-center">
                               Data Kosong
                             </td>
                           </tr>

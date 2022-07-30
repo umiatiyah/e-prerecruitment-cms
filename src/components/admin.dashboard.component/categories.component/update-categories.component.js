@@ -118,7 +118,7 @@ export default class UpdateCategory extends Component {
                         onChange={this.onChangeCategoryName}
                       />
                     </div>
-                    <div className="form-group">
+                    {/* <div className="form-group">
                       <label htmlFor="min_score">Minimal Nilai</label>
                       <input
                         type="text"
@@ -128,7 +128,7 @@ export default class UpdateCategory extends Component {
                         onChange={this.onChangeMinScore}
                       />
                     </div>
-                    {/* <div className="form-group">
+                    <div className="form-group">
                       <label htmlFor="duration">Durasi Pengerjaan (minute)</label>
                       <input
                         type="text"

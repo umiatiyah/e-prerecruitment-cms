@@ -84,7 +84,7 @@ export default class AddCategory extends Component {
                       />
                     </div>
 
-                    <div className="form-group">
+                    {/* <div className="form-group">
                       <label htmlFor="min_score">Nilai Minimal</label>
                       <input
                         type="text"
@@ -97,7 +97,7 @@ export default class AddCategory extends Component {
                       />
                     </div>
 
-                    {/* <div className="form-group">
+                    <div className="form-group">
                       <label htmlFor="duration">Durasi</label>
                       <input
                         type="text"
