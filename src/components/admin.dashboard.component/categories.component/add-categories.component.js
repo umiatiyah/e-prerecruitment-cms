@@ -97,7 +97,7 @@ export default class AddCategory extends Component {
                       />
                     </div>
 
-                    <div className="form-group">
+                    {/* <div className="form-group">
                       <label htmlFor="duration">Durasi</label>
                       <input
                         type="text"
@@ -120,7 +120,7 @@ export default class AddCategory extends Component {
                         onChange={this.onChangeLimitQuestion}
                         name="limit_question"
                       />
-                    </div>
+                    </div> */}
                     <button
                       onClick={this.saveCategory}
                       className="btn btn-block btn-success btn-sm"

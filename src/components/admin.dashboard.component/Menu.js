@@ -210,14 +210,14 @@ export default class Menu extends Component {
                   </p>
                 </a>
               </li>
-              <li className="nav-item ">
+              {/* <li className="nav-item ">
                 <a href="/valuation" className="nav-link">
                   <i className="nav-icon fas fa-images" />
                   <p>
                     Valuation
                   </p>
                 </a>
-              </li>
+              </li> */}
               <li className="nav-item ">
                 <a href="/result" className="nav-link">
                   <i className="nav-icon fas fa-images" />
