@@ -1,7 +1,7 @@
 import http from "../http-common";
 import authHeader from "./auth-header";
 
-const API_URL = "https://sheltered-meadow-71757.herokuapp.com";
+const API_URL = process.env.REACT_APP_API_URL;
 
 class ValuationService {
   getAll() {

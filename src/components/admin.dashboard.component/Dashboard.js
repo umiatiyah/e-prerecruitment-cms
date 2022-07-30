@@ -68,7 +68,7 @@ export default class Dashboard extends Component {
                   <div className="icon">
                     <i className="ion ion-ios-person"></i>
                   </div>
-                  <a href="/products" className="small-box-footer">
+                  <a href="/admins" className="small-box-footer">
                     More info <i className="fas fa-arrow-circle-right"></i>
                   </a>
                 </div>
@@ -83,7 +83,7 @@ export default class Dashboard extends Component {
                   <div className="icon">
                     <i className="ion ion-ios-people"></i>
                   </div>
-                  <a href="/products" className="small-box-footer">
+                  <a href="/users" className="small-box-footer">
                     More info <i className="fas fa-arrow-circle-right"></i>
                   </a>
                 </div>
@@ -114,7 +114,7 @@ export default class Dashboard extends Component {
                   <div className="icon">
                     <i className="ion ion-document-text"></i>
                   </div>
-                  <a href="/products" className="small-box-footer">
+                  <a href="/questions" className="small-box-footer">
                     More info <i className="fas fa-arrow-circle-right"></i>
                   </a>
                 </div>
@@ -129,7 +129,7 @@ export default class Dashboard extends Component {
                   <div className="icon">
                     <i className="ion ion-clipboard"></i>
                   </div>
-                  <a href="/products" className="small-box-footer">
+                  <a href="/answers" className="small-box-footer">
                     More info <i className="fas fa-arrow-circle-right"></i>
                   </a>
                 </div>

@@ -1,11 +1,11 @@
 import axios from "axios";
 
-const API_URL = "https://sheltered-meadow-71757.herokuapp.com/login/";
+const API_URL = process.env.REACT_APP_API_URL;
 
 class AuthService {
   login(email, password) {
     return axios
-      .post(API_URL + "admin", {
+      .post(API_URL + "/login/admin", {
         email,
         password,
       })
@@ -19,14 +19,6 @@ class AuthService {
 
   logout() {
     localStorage.removeItem("user");
-  }
-
-  register(name, email, password) {
-    return axios.post(API_URL + "create", {
-      name,
-      email,
-      password,
-    });
   }
 
   getCurrentUser() {
