@@ -30,6 +30,7 @@ import UpdateAnswer from "./components/admin.dashboard.component/answers.compone
 
 import ListHistory from "./components/admin.dashboard.component/history.component/list-history.component";
 import ListValuation from "./components/admin.dashboard.component/valuation.component/list-valuation.component";
+import ListResult from "./components/admin.dashboard.component/result.component/list-result.component";
 
 class App extends Component {
   constructor(props) {
@@ -87,6 +88,7 @@ class App extends Component {
 
             <Route exact path="/history" component={ListHistory} />
             <Route exact path="/valuation" component={ListValuation} />
+            <Route exact path="/result" component={ListResult} />
 
             <Redirect exact from="/" to="/login" />
             <Route path="/login" component={Login} />

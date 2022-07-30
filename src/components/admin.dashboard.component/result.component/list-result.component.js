@@ -1,26 +1,26 @@
 import React, { Component } from "react";
-import ValuationService from "../../../services/valuation.service";
+import ResultService from "../../../services/result.service";
 import Header from "../Header";
 import Menu from "../Menu";
 import Footer from "../Footer";
-export default class ListValuation extends Component {
+export default class ListResult extends Component {
   constructor(props) {
     super(props);
-    this.retrieveValuation = this.retrieveValuation.bind(this);
+    this.retrieveResult = this.retrieveResult.bind(this);
     this.state = {
-      valuations: [],
+      results: [],
     };
   }
 
   componentDidMount() {
-    this.retrieveValuation();
+    this.retrieveResult();
   }
 
-  retrieveValuation() {
-    ValuationService.getAll()
+  retrieveResult() {
+    ResultService.getAll()
       .then((response) => {
         this.setState({
-          valuations: response.data,
+          results: response.data,
         });
       })
       .catch((e) => {
@@ -29,7 +29,7 @@ export default class ListValuation extends Component {
   }
 
   render() {
-    const { valuations } = this.state;
+    const { results } = this.state;
 
     return (
       <div>
@@ -43,7 +43,7 @@ export default class ListValuation extends Component {
                   <div className="card-header">
                     <div className="row">
                       <div className="col-sm-9">
-                        <h3 className="card-title ">Valuation</h3>
+                        <h3 className="card-title ">Results</h3>
                       </div>
                     </div>
                   </div>
@@ -54,24 +54,20 @@ export default class ListValuation extends Component {
                           <th style={{ width: "10px" }}>#</th>
                           <th>User</th>
                           <th>NIK</th>
-                          <th>Category</th>
-                          <th>Minimal Score</th>
-                          <th>Total Score</th>
+                          <th>Result</th>
                           <th>Tanggal</th>
                         </tr>
                       </thead>
                       <tbody>
-                        {this.state.valuations ? (
+                        {this.state.results ? (
                           <>
-                            {valuations.map((valuations, index) => (
+                            {results.map((results, index) => (
                               <tr data-index={index}>
                                 <td>{index+1}</td>
-                                <td>{valuations.user}</td>
-                                <td>{valuations.nik_user}</td>
-                                <td>{valuations.category_value}</td>
-                                <td>{valuations.min_score}</td>
-                                <td>{valuations.total_score}</td>
-                                <td>{valuations.created_at}</td>
+                                <td>{results.user}</td>
+                                <td>{results.nik_user}</td>
+                                <td>{results.result}</td>
+                                <td>{results.created_at}</td>
                               </tr>
                             ))}
                           </>
