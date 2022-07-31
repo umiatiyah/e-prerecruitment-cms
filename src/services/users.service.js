@@ -12,12 +12,12 @@ class UsersService {
     return http.get(API_URL+`/admin/user/${id}`, { headers: authHeader() });
   }
 
-  add(name, email, nik) {
-    return http.post(API_URL+`/admin/user`, {name: name, email: email, nik: nik}, { headers: authHeader() });
+  add(name, email, nik, password) {
+    return http.post(API_URL+`/admin/user`, {name: name, email: email, nik: nik, password: password}, { headers: authHeader() });
   }
 
-  update(id, name, email, nik) {
-    return http.post(API_URL+`/admin/user/${id}`, {name: name, email: email, nik: nik}, { headers: authHeader() });
+  update(id, name, email, nik, password) {
+    return http.post(API_URL+`/admin/user/${id}`, {name: name, email: email, nik: nik, password: password}, { headers: authHeader() });
   }
 
   delete(id) {

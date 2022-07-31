@@ -10,12 +10,14 @@ export default class AddUser extends Component {
     this.onChangeUserName = this.onChangeUserName.bind(this);
     this.onChangeEmail = this.onChangeEmail.bind(this);
     this.onChangeNIK = this.onChangeNIK.bind(this);
+    this.onChangePassword = this.onChangePassword.bind(this);
     this.saveUser = this.saveUser.bind(this);
 
     this.state = {
       name: "",
       email: "",
       nik: "",
+      password: "",
     };
   }
 
@@ -37,9 +39,14 @@ export default class AddUser extends Component {
     });
   }
 
+  onChangePassword(e) {
+    this.setState({
+      password: e.target.value,
+    });
+  }
 
   saveUser() {
-    UserService.add(this.state.name, this.state.email, this.state.nik)
+    UserService.add(this.state.name, this.state.email, this.state.nik, this.state.password)
       .then((response) => {
         this.props.history.push("/users");
         window.location.reload();
@@ -96,6 +103,19 @@ export default class AddUser extends Component {
                         required
                         value={this.state.nik}
                         onChange={this.onChangeNIK}
+                        name="nik"
+                      />
+                    </div>
+
+                    <div className="form-group">
+                      <label htmlFor="nik">Password</label>
+                      <input
+                        type="text"
+                        className="form-control"
+                        id="nik"
+                        required
+                        value={this.state.password}
+                        onChange={this.onChangePassword}
                         name="nik"
                       />
                     </div>

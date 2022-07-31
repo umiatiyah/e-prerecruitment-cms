@@ -9,11 +9,13 @@ export default class AddAdmin extends Component {
     super(props);
     this.onChangeAdminName = this.onChangeAdminName.bind(this);
     this.onChangeEmail = this.onChangeEmail.bind(this);
+    this.onChangeAdminPassword = this.onChangeAdminPassword.bind(this);
     this.saveAdmin = this.saveAdmin.bind(this);
 
     this.state = {
       name: "",
       email: "",
+      password: "",
     };
   }
 
@@ -29,9 +31,14 @@ export default class AddAdmin extends Component {
     });
   }
 
+  onChangeAdminPassword(e) {
+    this.setState({
+      password: e.target.value,
+    });
+  }
 
   saveAdmin() {
-    AdminService.add(this.state.name, this.state.email)
+    AdminService.add(this.state.name, this.state.email, this.state.password)
       .then((response) => {
         this.props.history.push("/admins");
         window.location.reload();
@@ -76,6 +83,19 @@ export default class AddAdmin extends Component {
                         value={this.state.email}
                         onChange={this.onChangeEmail}
                         name="email"
+                      />
+                    </div>
+
+                    <div className="form-group">
+                      <label htmlFor="password">Password</label>
+                      <input
+                        type="text"
+                        className="form-control"
+                        id="password"
+                        required
+                        value={this.state.password}
+                        onChange={this.onChangeAdminPassword}
+                        name="password"
                       />
                     </div>
 

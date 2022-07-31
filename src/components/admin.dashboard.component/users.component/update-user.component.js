@@ -11,6 +11,7 @@ export default class UpdateUser extends Component {
     this.onChangeName = this.onChangeName.bind(this);
     this.onChangeEmail = this.onChangeEmail.bind(this);
     this.onChangeNIK = this.onChangeNIK.bind(this);
+    this.onChangePassword = this.onChangePassword.bind(this);
     this.getUser = this.getUser.bind(this);
     this.updateUser = this.updateUser.bind(this);
 
@@ -60,6 +61,19 @@ export default class UpdateUser extends Component {
     });
   }
 
+  onChangePassword(e) {
+    const password = e.target.value;
+
+    this.setState(function (prevState) {
+      return {
+        currentUser: {
+          ...prevState.currentUser,
+          password: password,
+        },
+      };
+    });
+  }
+
   getUser(id) {
     UserService.get(id)
       .then((response) => {
@@ -73,11 +87,11 @@ export default class UpdateUser extends Component {
   }
 
   updateUser() {
-    UserService.update(this.props.match.params.id, this.state.currentUser.name, this.state.currentUser.email, this.state.currentUser.nik)
+    UserService.update(this.props.match.params.id, this.state.currentUser.name, this.state.currentUser.email, this.state.currentUser.nik, this.state.currentUser.password)
       .then((response) => {
-/*         this.props.history.push("/users");
+        this.props.history.push("/users");
         window.location.reload();
- */      })
+      })
       .catch((error) => {
         alert("sorry, something's wrong..");
         console.log(error);
@@ -126,6 +140,16 @@ export default class UpdateUser extends Component {
                         id="nik"
                         value={currentUser.nik}
                         onChange={this.onChangeNIK}
+                      />
+                    </div>
+                    <div className="form-group">
+                      <label htmlFor="password">Password</label>
+                      <input
+                        type="text"
+                        className="form-control"
+                        id="password"
+                        value={currentUser.password}
+                        onChange={this.onChangePassword}
                       />
                     </div>
                   </form>

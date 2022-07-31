@@ -12,12 +12,12 @@ class AdminService {
     return http.get(API_URL+`/admin/detail/${id}`, { headers: authHeader() });
   }
 
-  add(name, email) {
-    return http.post(API_URL+`/admin/create`, {name: name, email: email}, { headers: authHeader() });
+  add(name, email, password) {
+    return http.post(API_URL+`/admin/create`, {name: name, email: email, password: password}, { headers: authHeader() });
   }
 
-  update(id, name, email) {
-    return http.post(API_URL+`/admin/update/${id}`, {name: name, email: email}, { headers: authHeader() });
+  update(id, name, email, password) {
+    return http.post(API_URL+`/admin/update/${id}`, {name: name, email: email, password: password}, { headers: authHeader() });
   }
 
   delete(id) {

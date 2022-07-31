@@ -10,6 +10,7 @@ export default class UpdateAdmin extends Component {
     super(props);
     this.onChangeName = this.onChangeName.bind(this);
     this.onChangeEmail = this.onChangeEmail.bind(this);
+    this.onChangePassword = this.onChangePassword.bind(this);
     this.getAdmin = this.getAdmin.bind(this);
     this.updateAdmin = this.updateAdmin.bind(this);
 
@@ -46,6 +47,17 @@ export default class UpdateAdmin extends Component {
     }));
   }
 
+  onChangePassword(e) {
+    const password = e.target.value;
+
+    this.setState((prevState) => ({
+      currentAdmin: {
+        ...prevState.currentAdmin,
+        password: password,
+      },
+    }));
+  }
+
   getAdmin(id) {
     AdminService.get(id)
       .then((response) => {
@@ -60,7 +72,7 @@ export default class UpdateAdmin extends Component {
   }
 
   updateAdmin() {
-    AdminService.update(this.props.match.params.id, this.state.currentAdmin.name, this.state.currentAdmin.email)
+    AdminService.update(this.props.match.params.id, this.state.currentAdmin.name, this.state.currentAdmin.email, this.state.currentAdmin.password)
       .then((response) => {
         this.props.history.push("/admins");
         window.location.reload();
@@ -103,6 +115,16 @@ export default class UpdateAdmin extends Component {
                         id="email"
                         value={currentAdmin.email}
                         onChange={this.onChangeEmail}
+                      />
+                    </div>
+                    <div className="form-group">
+                      <label htmlFor="password">Password</label>
+                      <input
+                        type="text"
+                        className="form-control"
+                        id="password"
+                        value={currentAdmin.password}
+                        onChange={this.onChangePassword}
                       />
                     </div>
                   </form>
