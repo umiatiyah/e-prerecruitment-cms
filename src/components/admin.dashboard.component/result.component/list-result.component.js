@@ -54,6 +54,7 @@ export default class ListResult extends Component {
                           <th style={{ width: "10px" }}>#</th>
                           <th>User</th>
                           <th>NIK</th>
+                          <th>Nilai Kandidat</th>
                           <th>Hasil</th>
                           <th>Tanggal</th>
                         </tr>
@@ -66,6 +67,7 @@ export default class ListResult extends Component {
                                 <td>{index+1}</td>
                                 <td>{results.user}</td>
                                 <td>{results.nik_user}</td>
+                                <td>{results.total_score}</td>
                                 <td>{results.result}</td>
                                 <td>{results.created_at}</td>
                               </tr>

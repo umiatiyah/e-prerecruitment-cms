@@ -56,6 +56,7 @@ export default class ListHistory extends Component {
                           <th>Kriteria</th>
                           <th>Pertanyaan</th>
                           <th>Jawaban</th>
+                          <th>Nilai Jawaban</th>
                           <th>User</th>
                           <th>NIK</th>
                           <th>Tanggal</th>
@@ -70,6 +71,7 @@ export default class ListHistory extends Component {
                                 <td>{histories.category_value}</td>
                                 <td>{histories.question_value}</td>
                                 <td>{histories.answer_value}</td>
+                                <td>{histories.answer_score}</td>
                                 <td>{histories.user}</td>
                                 <td>{histories.nik_user}</td>
                                 <td>{histories.created_at}</td>
@@ -78,7 +80,7 @@ export default class ListHistory extends Component {
                           </>
                         ) : (
                           <tr>
-                            <td colspan="7" className="text-center">
+                            <td colspan="8" className="text-center">
                               Data Kosong
                             </td>
                           </tr>
