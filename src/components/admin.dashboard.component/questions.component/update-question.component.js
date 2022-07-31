@@ -144,7 +144,7 @@ export default class UpdateQuestion extends Component {
                   <h4>Pertanyaan</h4>
                   <form>
                     <div className="form-group">
-                    <label htmlFor="categoryName">Kategori</label>
+                    <label htmlFor="categoryName">Kriteria</label>
                       <select className="form-control" onChange={this.onChangeCategoryID}>
                         <option value={currentQuestion.category_id}>{currentQuestion.category_name}</option>
                         {this.state.categories ? (
@@ -154,7 +154,7 @@ export default class UpdateQuestion extends Component {
                         ))}
                         </>
                         ) : (
-                        <option value="">Kategori Kosong</option>
+                        <option value="">Kriteria Kosong</option>
                         )}
                       </select>
                     </div>

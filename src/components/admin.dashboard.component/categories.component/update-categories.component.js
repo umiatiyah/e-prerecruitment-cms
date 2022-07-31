@@ -109,7 +109,7 @@ export default class UpdateCategory extends Component {
                   <h4>Category</h4>
                   <form>
                     <div className="form-group">
-                      <label htmlFor="name">Nama Kategori</label>
+                      <label htmlFor="name">Nama Kriteria</label>
                       <input
                         type="text"
                         className="form-control"

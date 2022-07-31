@@ -55,8 +55,8 @@ export default class ListValuation extends Component {
                           <th>User</th>
                           <th>NIK</th>
                           <th>Category</th>
-                          <th>Minimal Score</th>
-                          <th>Total Score</th>
+                          <th>Minimal Nilai</th>
+                          <th>Total Nilai</th>
                           <th>Tanggal</th>
                         </tr>
                       </thead>

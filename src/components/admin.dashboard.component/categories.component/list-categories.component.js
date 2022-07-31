@@ -62,14 +62,14 @@ export default class ListCategory extends Component {
                   <div className="card-header">
                     <div className="row">
                       <div className="col-sm-9">
-                        <h3 className="card-title ">Daftar Kategori</h3>
+                        <h3 className="card-title ">Daftar Kriteria</h3>
                       </div>
                       <div className="col-sm-3">
                         <Link
                           to={"/categories/add"}
                           className="btn btn-block btn-success btn-xs"
                         >
-                          Tambah Kategori
+                          Tambah Kriteria
                         </Link>
                       </div>
                     </div>
@@ -79,7 +79,7 @@ export default class ListCategory extends Component {
                       <thead>
                         <tr>
                           <th style={{ width: "10px" }}>#</th>
-                          <th>Nama Kategori</th>
+                          <th>Nama Kriteria</th>
                           {/* <th>Nilai Minimal</th>
                           <th>Durasi</th>
                           <th>Batas Pertanyaan</th> */}

@@ -109,7 +109,7 @@ export default class AddAnswer extends Component {
                     </div>
 
                     <div className="form-group">
-                      <label htmlFor="score">Score</label>
+                      <label htmlFor="score">Nilai</label>
                       <input
                         type="number"
                         className="form-control"

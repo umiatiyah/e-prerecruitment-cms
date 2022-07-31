@@ -80,7 +80,7 @@ export default class ListQuestions extends Component {
                       <thead>
                         <tr>
                           <th style={{ width: "10px" }}>#</th>
-                          <th>Kategori</th>
+                          <th>Kriteria</th>
                           <th>Pertanyaan</th>
                           <th>Status</th>
                           <th>Aksi</th>

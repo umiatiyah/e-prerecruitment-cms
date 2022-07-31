@@ -72,7 +72,7 @@ export default class AddCategory extends Component {
                 <div className="submit-form">
                   <div>
                     <div className="form-group">
-                      <label htmlFor="categoryName">Nama Kategori</label>
+                      <label htmlFor="categoryName">Nama Kriteria</label>
                       <input
                         type="text"
                         className="form-control"

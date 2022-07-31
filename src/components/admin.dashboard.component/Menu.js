@@ -128,7 +128,7 @@ export default class Menu extends Component {
                 <a href="#" className="nav-link">
                   <i class="nav-icon fas fa-images"></i>
                   <p>
-                    Kategori
+                    Kriteria
                     <i className="right fas fa-angle-left" />
                   </p>
                 </a>
@@ -136,7 +136,7 @@ export default class Menu extends Component {
                   <li className="nav-item">
                     <Link to="/categories" className="nav-link active">
                       <i class="nav-icon fas fa-table"></i>
-                      <p>Daftar Kategori</p>
+                      <p>Daftar Kriteria</p>
                     </Link>
                   </li>
                 </ul>
@@ -144,7 +144,7 @@ export default class Menu extends Component {
                   <li className="nav-item">
                     <Link to="/categories/add" className="nav-link active">
                       <i class="nav-icon fas fa-edit"></i>
-                      <p>Tambah Kategori</p>
+                      <p>Tambah Kriteria</p>
                     </Link>
                   </li>
                 </ul>
@@ -192,10 +192,7 @@ export default class Menu extends Component {
                 </ul>
                 <ul className="nav nav-treeview">
                   <li className="nav-item">
-                    <Link
-                      to="/answers/add"
-                      className="nav-link active"
-                    >
+                    <Link to="/answers/add" className="nav-link active">
                       <i className="nav-icon fas fa-edit" />
                       <p>Tambah Jawaban</p>
                     </Link>
@@ -205,9 +202,7 @@ export default class Menu extends Component {
               <li className="nav-item ">
                 <a href="/history" className="nav-link">
                   <i className="nav-icon fas fa-images" />
-                  <p>
-                    History
-                  </p>
+                  <p>Riwayat Tes</p>
                 </a>
               </li>
               {/* <li className="nav-item ">
@@ -221,9 +216,7 @@ export default class Menu extends Component {
               <li className="nav-item ">
                 <a href="/result" className="nav-link">
                   <i className="nav-icon fas fa-images" />
-                  <p>
-                    Result
-                  </p>
+                  <p>Hasil Tes</p>
                 </a>
               </li>
             </ul>

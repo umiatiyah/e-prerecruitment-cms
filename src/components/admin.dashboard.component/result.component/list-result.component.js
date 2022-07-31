@@ -43,7 +43,7 @@ export default class ListResult extends Component {
                   <div className="card-header">
                     <div className="row">
                       <div className="col-sm-9">
-                        <h3 className="card-title ">Results</h3>
+                        <h3 className="card-title ">Hasil Tes</h3>
                       </div>
                     </div>
                   </div>
@@ -54,7 +54,7 @@ export default class ListResult extends Component {
                           <th style={{ width: "10px" }}>#</th>
                           <th>User</th>
                           <th>NIK</th>
-                          <th>Result</th>
+                          <th>Hasil</th>
                           <th>Tanggal</th>
                         </tr>
                       </thead>

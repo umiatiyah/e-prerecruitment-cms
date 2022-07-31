@@ -78,10 +78,10 @@ export default class ListAnswers extends Component {
                       <thead>
                         <tr>
                           <th style={{ width: "10px" }}>#</th>
-                          <th>Kategori</th>
+                          <th>Kriteria</th>
                           <th>Pertanyaan</th>
                           <th>Jawaban</th>
-                          <th>Score</th>
+                          <th>Nilai</th>
                           <th>Status</th>
                           <th>Aksi</th>
                         </tr>

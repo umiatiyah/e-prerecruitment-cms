@@ -94,7 +94,7 @@ export default class Dashboard extends Component {
                 <div className="small-box bg-danger">
                   <div className="inner">
                     <h3>{this.state.count_category}</h3>
-                    <p>Kategori</p>
+                    <p>Kriteria</p>
                   </div>
                   <div className="icon">
                     <i className="ion ion-document"></i>

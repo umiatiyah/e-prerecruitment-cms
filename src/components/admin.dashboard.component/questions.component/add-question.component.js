@@ -84,9 +84,9 @@ export default class AddQuestion extends Component {
                 <div className="submit-form">
                   <div>
                     <div className="form-group">
-                      <label htmlFor="categoryName">Kategori</label>
+                      <label htmlFor="categoryName">Kriteria</label>
                       <select className="form-control" onChange={this.onChangeCategoryID}>
-                        <option>Pilih Kategori</option>
+                        <option>Pilih Kriteria</option>
                         {this.state.categories ? (
                         <>
                         {categories.map((categories, index) => (
@@ -94,7 +94,7 @@ export default class AddQuestion extends Component {
                         ))}
                         </>
                         ) : (
-                        <option value="">Kategori Kosong</option>
+                        <option value="">Kriteria Kosong</option>
                         )}
                       </select>
                     </div>

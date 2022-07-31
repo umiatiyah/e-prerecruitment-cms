@@ -44,7 +44,7 @@ export default class ListHistory extends Component {
                   <div className="card-header">
                     <div className="row">
                       <div className="col-sm-9">
-                        <h3 className="card-title ">History</h3>
+                        <h3 className="card-title ">Riwayat Tes</h3>
                       </div>
                     </div>
                   </div>
@@ -53,7 +53,7 @@ export default class ListHistory extends Component {
                       <thead>
                         <tr>
                           <th style={{ width: "10px" }}>#</th>
-                          <th>Kategori</th>
+                          <th>Kriteria</th>
                           <th>Pertanyaan</th>
                           <th>Jawaban</th>
                           <th>User</th>
@@ -66,7 +66,7 @@ export default class ListHistory extends Component {
                           <>
                             {histories.map((histories, index) => (
                               <tr data-index={index}>
-                                <td>{index+1}</td>
+                                <td>{index + 1}</td>
                                 <td>{histories.category_value}</td>
                                 <td>{histories.question_value}</td>
                                 <td>{histories.answer_value}</td>
