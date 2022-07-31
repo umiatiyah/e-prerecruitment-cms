@@ -11,6 +11,7 @@ import BoardAdmin from "./components/board-admin.component";
 import ListAdmin from "./components/admin.dashboard.component/admins.component/list-admins.component";
 import AddAdmin from "./components/admin.dashboard.component/admins.component/add-admin.component";
 import UpdateAdmin from "./components/admin.dashboard.component/admins.component/update-admin.component";
+import Profile from "./components/admin.dashboard.component/admins.component/profile.component";
 
 import ListUser from "./components/admin.dashboard.component/users.component/list-users.component";
 import AddUser from "./components/admin.dashboard.component/users.component/add-user.component";
@@ -69,6 +70,7 @@ class App extends Component {
             <Route exact path="/admins" component={ListAdmin} />
             <Route exact path="/admins/add" component={AddAdmin} />
             <Route path="/admins/:id" component={UpdateAdmin} />
+            <Route path="/profile" component={Profile} />
 
             <Route exact path="/users" component={ListUser} />
             <Route exact path="/users/add" component={AddUser} />
