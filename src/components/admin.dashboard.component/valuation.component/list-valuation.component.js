@@ -55,9 +55,8 @@ export default class ListValuation extends Component {
                           <th>User</th>
                           <th>NIK</th>
                           <th>Category</th>
-                          <th>Minimal Nilai</th>
-                          <th>Total Nilai</th>
-                          <th>Tanggal</th>
+                          <th>Total Nilai Perkriteria</th>
+                          <th>Bobot Kriteria(%)</th>
                         </tr>
                       </thead>
                       <tbody>
@@ -69,15 +68,14 @@ export default class ListValuation extends Component {
                                 <td>{valuations.user}</td>
                                 <td>{valuations.nik_user}</td>
                                 <td>{valuations.category_value}</td>
-                                <td>{valuations.min_score}</td>
                                 <td>{valuations.total_score}</td>
-                                <td>{valuations.created_at}</td>
+                                <td>{valuations.persen_bobot_category}</td>
                               </tr>
                             ))}
                           </>
                         ) : (
                           <tr>
-                            <td colspan="5" className="text-center">
+                            <td colspan="6" className="text-center">
                               Data Kosong
                             </td>
                           </tr>
