@@ -120,7 +120,7 @@ export default class UpdateAdmin extends Component {
                     <div className="form-group">
                       <label htmlFor="password">Password</label>
                       <input
-                        type="text"
+                        type="password"
                         className="form-control"
                         id="password"
                         value={currentAdmin.password}

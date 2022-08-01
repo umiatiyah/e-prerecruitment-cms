@@ -108,15 +108,15 @@ export default class AddUser extends Component {
                     </div>
 
                     <div className="form-group">
-                      <label htmlFor="nik">Password</label>
+                      <label htmlFor="password">Password</label>
                       <input
-                        type="text"
+                        type="password"
                         className="form-control"
-                        id="nik"
+                        id="password"
                         required
                         value={this.state.password}
                         onChange={this.onChangePassword}
-                        name="nik"
+                        name="password"
                       />
                     </div>
 
