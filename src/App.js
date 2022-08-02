@@ -30,6 +30,7 @@ import AddAnswer from "./components/admin.dashboard.component/answers.component/
 import UpdateAnswer from "./components/admin.dashboard.component/answers.component/update-answers.component";
 
 import ListHistory from "./components/admin.dashboard.component/history.component/list-history.component";
+import ListBobotCategory from "./components/admin.dashboard.component/bobot-category.component/list-bobot-category.component";
 import ListValuation from "./components/admin.dashboard.component/valuation.component/list-valuation.component";
 import ListResult from "./components/admin.dashboard.component/result.component/list-result.component";
 
@@ -89,6 +90,7 @@ class App extends Component {
             <Route path="/answers/:id" component={UpdateAnswer} />
 
             <Route exact path="/history" component={ListHistory} />
+            <Route exact path="/bobotkriteria" component={ListBobotCategory} />
             <Route exact path="/valuation" component={ListValuation} />
             <Route exact path="/result" component={ListResult} />
 

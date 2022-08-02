@@ -206,6 +206,14 @@ export default class Menu extends Component {
                 </a>
               </li>
               <li className="nav-item ">
+                <a href="/bobotkriteria" className="nav-link">
+                  <i className="nav-icon fas fa-images" />
+                  <p>
+                    Bobot Kriteria
+                  </p>
+                </a>
+              </li>
+              <li className="nav-item ">
                 <a href="/valuation" className="nav-link">
                   <i className="nav-icon fas fa-images" />
                   <p>

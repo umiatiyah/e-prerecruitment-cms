@@ -8,6 +8,10 @@ class CategoryService {
     return http.get(API_URL+`/admin/category`, { headers: authHeader() });
   }
 
+  getBobotCategory() {
+    return http.get(API_URL+`/admin/bobot/category`, { headers: authHeader() });
+  }
+
   get(id) {
     return http.get(API_URL+`/admin/category/${id}`, { headers: authHeader() });
   }
