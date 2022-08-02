@@ -75,7 +75,7 @@ export default class ListResult extends Component {
                           </>
                         ) : (
                           <tr>
-                            <td colspan="5" className="text-center">
+                            <td colspan="6" className="text-center">
                               Data Kosong
                             </td>
                           </tr>
