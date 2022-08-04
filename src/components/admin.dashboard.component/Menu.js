@@ -19,6 +19,9 @@ export default class Menu extends Component {
       this.setState({
         currentUser: user,
       });
+    } else {
+      alert("Please login first");
+      window.location = "/";
     }
   }
 
